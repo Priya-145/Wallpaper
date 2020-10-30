@@ -25,7 +25,7 @@ export default class CustomButton extends Component {
             justifyContent:'center'
           }}>
           <Text
-            style={{fontFamily: Fonts.Medium, fontSize: 18, color: 'white'}}>
+            style={{fontFamily: Fonts.Medium, fontSize: hp(2.22), color: 'white'}}>
             {this.props.name}
           </Text>
           </LinearGradient>

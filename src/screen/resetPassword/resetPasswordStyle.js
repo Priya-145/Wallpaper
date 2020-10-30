@@ -22,14 +22,14 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
   mainheading: {
-    fontSize: 24,
+    fontSize: hp(2.96),
     fontFamily: Fonts.Medium,
     color: 'rgba(255,255,255,0.5)',
     marginTop: hp(1.48),
     marginBottom: hp(2.46),
   },
   text: {
-    fontSize: 16,
+    fontSize: hp(1.97),
     fontFamily: Fonts.Regular,
     color: 'rgba(255,255,255,0.5)',
     // marginTop:
