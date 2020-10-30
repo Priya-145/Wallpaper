@@ -4,7 +4,7 @@ import { Text, View,TextInput } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/Ionicons';
 import { Fonts } from '../../utils/font'
 import { Sae } from 'react-native-textinput-effects';
-import AnimatedInput from "react-native-animated-input";
+// import AnimatedInput from "react-native-animated-input";
 import { widthPercentageToDP as wp,heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 
