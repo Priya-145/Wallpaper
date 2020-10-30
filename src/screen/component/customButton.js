@@ -19,7 +19,7 @@ export default class CustomButton extends Component {
             height: hp(7.02),
             width: wp(86.67),
             backgroundColor: 'red',
-            marginTop: hp(13.67),
+            
             borderRadius: 10,
             alignItems:'center',
             justifyContent:'center'

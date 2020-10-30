@@ -44,5 +44,13 @@ export default StyleSheet.create({
       alignItems:'center',
       borderRadius:10,
     //   backgroundColor:'red'
+  },
+  codeText:{
+    fontSize:22,
+    fontFamily:Fonts.Medium,
+    color:'white',
+    textAlign:'center',
+    height:'100%',
+    width:'100%'
   }
 });
