@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-import TextComponet from './src/screen/resetPassword/resetPassword'
+
+import Signup from './src/screen/signup/sign_up'
 
 export default class App extends Component {
   render() {
     return (
-      <TextComponet/>
+     <Signup/>
+  //   <View>
+  // <Text>dsfghjkl</Text>
+  //   </View>
     )
   }
 }
