@@ -26,7 +26,7 @@ export default class CustomButton extends Component {
           }}>
           <Text
             style={{fontFamily: Fonts.Medium, fontSize: 18, color: 'white'}}>
-            Continue
+            {this.props.name}
           </Text>
           </LinearGradient>
         </TouchableOpacity>

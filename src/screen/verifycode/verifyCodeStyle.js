@@ -42,6 +42,7 @@ export default StyleSheet.create({
       backgroundColor:'#343434',
       justifyContent:'center',
       alignItems:'center',
-      borderRadius:10
+      borderRadius:10,
+    //   backgroundColor:'red'
   }
 });

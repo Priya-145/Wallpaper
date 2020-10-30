@@ -24,7 +24,7 @@ export default class resetPassword extends Component {
                         <ComponentText label='Name' />
                     </View>
                     <View>
-                        <CustomButton />
+                        <CustomButton name="Continue"/>
                     </View>
                 </View>
                 
