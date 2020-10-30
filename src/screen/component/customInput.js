@@ -17,8 +17,8 @@ export default class ComponentText extends Component {
            
                 <Sae
                     label={this.props.label}
-                    labelStyle={{color:"#707070",marginBottom:hp(3),fontFamily:Fonts.Regular,fontSize:1}}
-                    inputStyle={{fontSize:24,fontFamily:Fonts.SemiBold}}
+                    labelStyle={{color:"#707070",marginBottom:hp(3),fontFamily:Fonts.Regular,fontSize:hp(1.60)}}
+                    inputStyle={{fontSize:hp(1.97),fontFamily:Fonts.Bold}}
                     inputPadding={10}
                     labelHeight={10}
                     borderHeight={0}
@@ -40,7 +40,7 @@ export default class ComponentText extends Component {
 
 
             </View>
-            <FontAwesome name="ios-mail-outline" size={20} color="#009FB8" />
+            <FontAwesome name={this.props.name} size={25} color="#009FB8" style={{marginLeft:wp(-6)}}/>
            
             </View>
         )
