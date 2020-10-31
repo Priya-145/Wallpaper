@@ -4,7 +4,7 @@ export const Fonts = {
     Medium:'Poppins-Medium',
     SemiBold:'Poppins-SemiBold',
     Regular:'Poppins-Regular',
-  
+    Light:'Poppins-Light',
     Thin:'Poppins-Regular',
 
 }
