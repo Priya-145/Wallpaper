@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View,Image } from 'react-native'
 import { Fonts } from '../../utils/font'
 import ComponentText from '../component/customInput'
- import CustomButton from '../component/customButton'
+import CustomButton from '../component/customButton'
 import  Styles from '../resetPassword/resetPasswordStyle'
 import {heightPercentageToDP as hp , widthPercentageToDP as wp} from 'react-native-responsive-screen'
 
