@@ -45,12 +45,14 @@ export default class latestScreen extends Component {
 
                 <View style={{flexDirection:'row'}}>
                     <ScrollView horizontal={true}>
-                    {
-                        Name.map((item,index)=>index)
-                        <View >
-                                <Text style={{color:'white'}}>{item}</Text>
+                    
+                        {/* Name.map((item,index)=>vindex) */}
+                         <View >
+                                <Text style={{color:'white'}}> {item} </Text>
                         </View>
-                    }
+                         
+                         
+                    
                         
                     </ScrollView>
                 </View>
