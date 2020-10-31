@@ -20,22 +20,24 @@ export default class resetPassword extends Component {
                     <Text style={Styles.mainheading}>Verification Code</Text>
                     <Text style={Styles.text}>Enter the 4 digits code that you  </Text>
                     <Text style={Styles.text}>received on your e-mail. </Text>
-                    <View style={{marginTop:hp(8.62),flexDirection:'row',justifyContent:'space-between',marginHorizontal:wp(3),width:'80%'}}>
+
+                    <View style={{marginTop:hp(10.10),marginBottom:hp(12.56),flexDirection:'row',justifyContent:'space-between',marginHorizontal:wp(3),width:'80%'}}>
+                        
                         <View style={Styles.code}>
-                            <TextInput style={{fontSize:20,fontFamily:Fonts.Regular,color:'white',textAlign:'center',height:'100%',width:'100%'}}>6</TextInput>
+                            <TextInput style={Styles.codeText}>6</TextInput>
                         </View>
                         <View style={Styles.code}>
-                            <TextInput style={{fontSize:22,fontFamily:Fonts.Medium,color:'white'}}></TextInput>
+                            <TextInput style={Styles.codeText}>7</TextInput>
                         </View>
                         <View style={Styles.code}>
-                            <TextInput style={{fontSize:22,fontFamily:Fonts.Medium,color:'white'}}></TextInput>
+                            <TextInput style={Styles.codeText}>8</TextInput>
                         </View>
                         <View style={Styles.code}>
-                            <TextInput style={{fontSize:22,fontFamily:Fonts.Medium,color:'white'}}></TextInput>
+                            <TextInput style={Styles.codeText}>1</TextInput>
                         </View>
                     </View>
                     <View>
-                        <CustomButton />
+                        <CustomButton name="Continue"/>
                     </View>
                 </View>
                 

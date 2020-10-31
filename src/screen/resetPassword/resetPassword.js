@@ -20,11 +20,11 @@ export default class resetPassword extends Component {
                     <Text style={Styles.mainheading}>Reset Password</Text>
                     <Text style={Styles.text}>We will send 4 digits code to your </Text>
                     <Text style={Styles.text}>email for the verification. </Text>
-                    <View style={{marginTop:hp(8.62)}}>
-                        <ComponentText label='Name' />
+                    <View style={{marginTop:hp(8.62),marginBottom: hp(13.67),}}>
+                        <ComponentText label='Name' name="ios-mail-outline"/>
                     </View>
                     <View>
-                        <CustomButton />
+                        <CustomButton name="Continue"/>
                     </View>
                 </View>
                 

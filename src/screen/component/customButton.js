@@ -19,14 +19,14 @@ export default class CustomButton extends Component {
             height: hp(7.02),
             width: wp(86.67),
             backgroundColor: 'red',
-            marginTop: hp(13.67),
+            
             borderRadius: 10,
             alignItems:'center',
             justifyContent:'center'
           }}>
           <Text
-            style={{fontFamily: Fonts.Medium, fontSize: 18, color: 'white'}}>
-            Continue
+            style={{fontFamily: Fonts.Medium, fontSize: hp(2.22), color: 'white'}}>
+            {this.props.name}
           </Text>
           </LinearGradient>
         </TouchableOpacity>
