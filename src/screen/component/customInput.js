@@ -17,8 +17,8 @@ export default class ComponentText extends Component {
            
                 <Sae
                     label={this.props.label}
-                    labelStyle={{color:"#707070",marginBottom:hp(3),fontFamily:Fonts.Regular,fontSize:hp(1.60)}}
-                    inputStyle={{fontSize:hp(1.97),fontFamily:Fonts.Bold}}
+                    labelStyle={{color:"#707070",marginBottom:hp(3),fontFamily:Fonts.Regular}}
+                    inputStyle={{fontSize:hp(1.97),fontFamily:Fonts.Bold,fontSize:hp(1.97)}}
                     inputPadding={10}
                     labelHeight={10}
                     borderHeight={0}

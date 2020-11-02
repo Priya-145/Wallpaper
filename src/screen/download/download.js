@@ -21,7 +21,7 @@ export default class download extends Component {
     
     render() {
         return (
-            <View>
+            <View style={{height:'100%',width:'100%'}}>
                 <ImageBackground source={Images.i} style={styles.background}>
                     {/* <ScrollView> */}
                     <View style={styles.top}>
@@ -36,7 +36,7 @@ export default class download extends Component {
                     </View>
 
 
-                    <View style={{ flexDirection: 'row', marginTop: hp(80.92) }}>
+                    <View style={{ flexDirection: 'row', marginTop: hp(80.92),marginBottom:hp(4.93) }}>
                         <TouchableOpacity onPress={()=>this.setState({isColour:!this.state.isColour})} >
                             <Image source={Icons.favourite}  style={this.state.isColour ? {tintColor:'#00FFFF', marginRight: wp(4), marginLeft: wp(9.34)}:{tintColor:'white', marginRight: wp(4), marginLeft: wp(9.34)}} ></Image>
                         </TouchableOpacity>
@@ -47,30 +47,9 @@ export default class download extends Component {
                         <Image source={Icons.group} style={{ marginLeft: wp(4) }}></Image>
                         </TouchableOpacity>
                     </View>
+          </ImageBackground>
 
-
-
-
-
-
-
-
-
-
-                    {/* <View style={styles.bottom}>
-                    <View>
-                        <Image source={Icons.favourite}></Image>
-                        <Image source={Icons.download} style={{ marginLeft: wp(4) }}></Image>
-                        <View style={{ flexDirection: 'row' }}>
-                            <Downloadbutton name='Download'></Downloadbutton>
-                            <Image source={Icons.download} style={{ height: hp(2.33), width: wp(5.06), borderColor: 'white' }}></Image>
-                        </View>
-                        <Image source={Icons.group} > </Image>
-                    </View>
-                </View> */}
-                    {/* </ScrollView> */}
-                </ImageBackground >
-            </View >
+            </View>
 
         )
     }

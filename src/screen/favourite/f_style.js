@@ -10,7 +10,9 @@ export default StyleSheet.create({
         width: wp(100)
 
     },
-   
+   mainview:{
+    backgroundColor:'#161616'
+   },
     bottom: {
         backgroundColor: '#000000',
         height: hp(8.62),
@@ -24,7 +26,7 @@ export default StyleSheet.create({
         fontSize: 16,
         alignItems: 'center',
         fontFamily: Fonts.Medium,
-        marginLeft: wp(34.46)
+
     },
     blueheart: {
         marginLeft: wp(10.67),

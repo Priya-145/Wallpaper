@@ -8,13 +8,13 @@ import {
 export default StyleSheet.create({
     head:{
         justifyContent:'space-between',
-        width:'100%',
+        // width:'100%',
         marginTop:hp(6.40),
         height:hp(3.69),
         flexDirection:"row",
-        marginLeft:wp(5.33),
-        marginRight:wp(5.33)
-        // marginHorizontal:wp(5.33)
+        // marginLeft:wp(5.33),
+        // marginRight:wp(5.33)
+        marginHorizontal:wp(4)
     },
     headMid:{
         width:wp(62.67),

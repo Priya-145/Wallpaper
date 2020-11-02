@@ -11,7 +11,7 @@ export default class CustomButton extends Component {
   render() {
     return (
       <View>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={this.props.onPress}>
           <LinearGradient colors={['#00FFFF', '#009FB8']}
           start={{x: 0, y: 0}} end={{x: 1, y: 0}}
           style={{
@@ -19,7 +19,8 @@ export default class CustomButton extends Component {
             height: hp(7.02),
             width: wp(86.67),
             backgroundColor: 'red',
-            marginTop:hp(8),
+            // 
+            
             borderRadius: 10,
             alignItems:'center',
             justifyContent:'center'

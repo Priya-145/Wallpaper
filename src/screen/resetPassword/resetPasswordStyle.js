@@ -25,13 +25,19 @@ export default StyleSheet.create({
     fontSize: hp(2.96),
     fontFamily: Fonts.Medium,
     color: 'rgba(255,255,255,0.5)',
-    marginTop: hp(1.48),
+    marginTop: hp(6.77),
     marginBottom: hp(2.46),
   },
   text: {
     fontSize: hp(1.97),
     fontFamily: Fonts.Regular,
     color: 'rgba(255,255,255,0.5)',
-    // marginTop:
+    marginTop:hp(2.46)
+  },
+  text2: {
+    fontSize: hp(1.97),
+    fontFamily: Fonts.Regular,
+    color: 'rgba(255,255,255,0.5)',
+    // marginTop:hp(2.94)
   },
 });

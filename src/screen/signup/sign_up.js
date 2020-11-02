@@ -51,11 +51,12 @@ export default class sign_up extends Component {
                                     <Image source={Icons.lock}style={{marginTop:hp(2)}} ></Image>
                                 </View>
                                 
-
-                            <CustomButton name='Sign up' />
+                            <View style={{marginTop:hp(8)}}>
+                                <CustomButton name='Sign up' onPress={()=>this.props.navigation.navigate('Latest')}/>
+                            </View>
                             <View style={styles.bottomtext}>
                                 <Text style={styles.txt2}>Already have an account? </Text>
-                                <TouchableOpacity >
+                                <TouchableOpacity onPress={()=>this.props.navigation.navigate('SignIn')}>
                                     <Text style={styles.txt3}>
                                     Signin 
                                    
