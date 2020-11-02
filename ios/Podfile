@@ -10,6 +10,8 @@ target 'Wallpaper_project' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
   target 'Wallpaper_projectTests' do
     inherit! :complete
     # Pods for testing
