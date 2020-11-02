@@ -64,7 +64,7 @@ export default class latestScreen extends Component {
                                 </View>
                             )
                         })
-                        
+                    
                     }
                     </Text>
                     </TouchableOpacity>  
