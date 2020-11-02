@@ -20,17 +20,19 @@ export default StyleSheet.create(
             borderTopLeftRadius: 30
         },
         txt: {
-            fontSize: 24,
+            fontSize: hp(2.96),
             justifyContent: 'center',
             alignSelf: 'center',
-            color: '#939393',
+            color: 'rgba(255,255,255,0.5)',
             marginTop: hp(7.62),
+
             fontFamily: Fonts.Medium,
         },
         textinput:{
-            marginTop:hp(8.62),
-            marginLeft:wp(6.67),
-            marginRight:wp(6.67)
+            marginTop:hp(4.31),
+            alignSelf:'center',
+            flexDirection:'row',
+
         },
         btn: {
             color: 'white',
@@ -40,15 +42,15 @@ export default StyleSheet.create(
 
         },
         txt1: {
-            fontSize: 14,
-            color: '#939393',
+            fontSize: hp(1.97),
+            color: 'rgba(255,255,255,0.5)',
             justifyContent: 'center',
             alignSelf: 'center',
-            marginTop: hp(2.47),
+            marginTop: hp(1.60),
             fontFamily: Fonts.Regular,
         },
         txt2: {
-            color: '#939393',
+            color: 'rgba(255,255,255,0.5)',
             fontSize: 12,
             fontFamily:Fonts.Regular
 
@@ -56,9 +58,10 @@ export default StyleSheet.create(
         txt3: {
             color: '#009FB8',
             fontSize: 12,
-            borderBottomColor: '#009FB8',
-            borderBottomWidth: 1,
-            fontFamily:Fonts.Bold
+            // borderBottomColor: '#009FB8',
+            // borderBottomWidth: 1,
+            fontFamily:Fonts.Bold,
+            textDecorationLine:'underline'
         },
         bottomtext: {
             justifyContent: 'space-between',
@@ -66,7 +69,8 @@ export default StyleSheet.create(
             alignSelf: 'center',
             marginTop: hp(2.46),
             marginBottom:hp(4.68)
-        }
+        },
+       
 
     }
 )

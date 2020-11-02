@@ -25,7 +25,7 @@ export default StyleSheet.create({
     fontSize: hp(2.96),
     fontFamily: Fonts.Medium,
     color: 'rgba(255,255,255,0.5)',
-    marginTop: hp(1.48),
+    marginTop: hp(6.76),
     marginBottom: hp(2.46),
   },
   text: {

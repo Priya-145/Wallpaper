@@ -23,16 +23,16 @@ export default StyleSheet.create(
             borderTopLeftRadius: 30
         },
         text1: {
-            fontSize: 24,
+            fontSize: hp(2.96),
             justifyContent: 'center',
             alignSelf: 'center',
-            color: '#939393',
+            color: 'rgba(255,255,255,0.5)',
             marginTop: hp(7.62),
             fontFamily: Fonts.Medium,
         },
         text2: {
-            fontSize: 14,
-            color: '#939393',
+            fontSize: hp(1.97),
+            color: 'rgba(255,255,255,0.5)',
             justifyContent: 'center',
             alignSelf: 'center',
             marginTop: hp(1.60),
@@ -50,7 +50,7 @@ export default StyleSheet.create(
         },
         forgot: {
             alignSelf: 'flex-end',
-            color: '#707070',
+            color: 'rgba(255,255,255,0.5)',
             fontSize: 12,
             fontFamily: Fonts.Regular,
             marginTop: hp(1.23),
@@ -59,7 +59,7 @@ export default StyleSheet.create(
        
 
         text3: {
-            color: '#939393',
+            color: 'rgba(255,255,255,0.5)',
             fontSize: 12,
             fontFamily: Fonts.Regular
 
@@ -67,10 +67,10 @@ export default StyleSheet.create(
         text4: {
             color: '#009FB8',
             fontSize: 12,
-            borderBottomColor: '#009FB8',
-            borderBottomWidth: 1,
+            // borderBottomColor: '#009FB8',
+            // borderBottomWidth: 1,
             fontFamily: Fonts.Bold,
-         
+            textDecorationLine:'underline'
         },
         bottom: {
             justifyContent: 'space-between',

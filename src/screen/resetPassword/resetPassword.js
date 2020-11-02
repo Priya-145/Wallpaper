@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View,Image } from 'react-native'
+import { Text, View,Image,ScrollView } from 'react-native'
 import { Fonts } from '../../utils/font'
 import ComponentText from '../component/customInput'
 import CustomButton from '../component/customButton'
@@ -11,21 +11,25 @@ export default class resetPassword extends Component {
     render() {
         return (
             <View style={{backgroundColor:'#161616'}}>
+
                 <View style={Styles.head}>
                     <Image source={require('./../../../asset/image/icons/logo-colored.png')}/>
                    
                     {/* <Text style={{fontSize:20,fontFamily:Fonts.Bold,color:'white'}}>sdfgtyh</Text> */}
                 </View>
                 <View style={Styles.resetView}>
+                {/* <ScrollView>                     */}
                     <Text style={Styles.mainheading}>Reset Password</Text>
                     <Text style={Styles.text}>We will send 4 digits code to your </Text>
-                    <Text style={Styles.text}>email for the verification. </Text>
-                    <View style={{marginTop:hp(8.62),marginBottom: hp(13.67),}}>
-                        <ComponentText label='Name' name="ios-mail-outline"/>
+                    <Text style={Styles.text2}>email for the verification. </Text>
+                    <View style={{marginTop:hp(8.62),}}>
+                        <ComponentText label='E-mail' name="ios-mail-outline"/>
                     </View>
-                    <View>
-                        <CustomButton name="Continue"/>
+                    <View style={{marginTop:hp(13.67)}}>
+                        <CustomButton name="Continue" onPress={()=>this.props.navigation.navigate('VerifyCode')}/>
                     </View>
+                {/* </ScrollView> */}
+
                 </View>
                 
             </View>

@@ -6,5 +6,6 @@ export const Fonts = {
     Regular:'Poppins-Regular',
     Light:'Poppins-Light',
     Thin:'Poppins-Regular',
+    ExtraLight:'Poppins-ExtraLight'
 
 }
