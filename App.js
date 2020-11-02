@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+// import Route from './src/screen/route/route'
 import Signup from './src/screen/signup/sign_up'
 import { Text, View } from 'react-native'
 // import Page from './src/screen/resetPassword/resetPassword'
@@ -13,11 +13,12 @@ import Favourite from './src/screen/favourite/favourites'
 export default class App extends Component {
   render() {
     return (
-       <Signup/>
+      //  <Signup/>
       // <Page/>
       // <In/> 
       // <Download/>
-      // <Favourite />
+       <Favourite />
+      // <Route/>
     )
   }
 }
