@@ -24,7 +24,7 @@ export default StyleSheet.create({
         fontSize: 16,
         alignItems: 'center',
         fontFamily: Fonts.Medium,
-        marginLeft: wp(34.46)
+
     },
     blueheart: {
         marginLeft: wp(10.67),

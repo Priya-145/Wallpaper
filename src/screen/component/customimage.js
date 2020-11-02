@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View ,FlatList, Image,ScrollView} from 'react-native'
+import { Text, View ,FlatList, Image,ScrollView,TouchableOpacity} from 'react-native'
 import { widthPercentageToDP as wp,heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default class Customimage extends Component {
@@ -78,7 +78,7 @@ export default class Customimage extends Component {
 
         ]
         return (
-            <View style={{marginVertical:hp(2)}}>
+            <View style={{marginVertical:hp(2.46)}}>
             <ScrollView>
             <View  >
                 <FlatList data={images}
@@ -88,7 +88,9 @@ export default class Customimage extends Component {
                     renderItem={({item})=>{
                         return(
                             <View style={{marginHorizontal:wp(2),marginVertical:hp(1)}}>
-                                <Image source={item.img}  style={{height:hp(36.95),width:wp(42.67),borderRadius:20,alignSelf:'center'}}></Image>
+                                <TouchableOpacity>
+                                    <Image source={item.img}  style={{height:hp(36.95),width:wp(42.67),borderRadius:20,alignSelf:'center'}}></Image>
+                                </TouchableOpacity>
                             </View>
                         )
                     }}

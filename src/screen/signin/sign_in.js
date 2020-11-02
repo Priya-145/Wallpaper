@@ -46,7 +46,7 @@ export default class sign_in extends Component {
                             <TouchableOpacity>
                                 <Text style={styles.forgot}>Forgot Password?</Text>
                             </TouchableOpacity>
-                            <View style={{marginTop:hp(10.71)}}>  
+                            <View style={{marginTop:hp(7.38)}}>
                                 <CustomButton name="Sign IN" />
                             </View>
                             <View style={styles.bottom}>

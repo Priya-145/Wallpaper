@@ -51,8 +51,9 @@ export default class sign_up extends Component {
                                     <Image source={Icons.lock}style={{marginTop:hp(2)}} ></Image>
                                 </View>
                                 
-
-                            <CustomButton name='Sign up' />
+                            <View style={{marginTop:hp(8)}}>
+                                <CustomButton name='Sign up' />
+                            </View>
                             <View style={styles.bottomtext}>
                                 <Text style={styles.txt2}>Already have an account? </Text>
                                 <TouchableOpacity >
