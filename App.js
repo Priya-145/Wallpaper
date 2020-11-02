@@ -8,17 +8,17 @@ import In from './src/screen/component/customInput'
 import Page from './src/screen/resetPassword/resetPassword'
 // import Page from './src/screen/resetPassword/resetPassword'
 // import Page from './src/screen/latest/latestScreen'
-
+import Download from './src/screen/download/download'
+import Favourite from './src/screen/favourite/favourites'
 
 export default class App extends Component {
   render() {
     return (
-     <Signup/>
-  //   <View>
-  // <Text>dsfghjkl</Text>
-  //   </View>
+       <Signup/>
       // <Page/>
-    // <In/> 
+      // <In/> 
+      // <Download/>
+      // <Favourite />
     )
   }
 }
