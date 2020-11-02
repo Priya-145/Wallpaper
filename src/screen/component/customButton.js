@@ -19,7 +19,11 @@ export default class CustomButton extends Component {
             height: hp(7.02),
             width: wp(86.67),
             backgroundColor: 'red',
+<<<<<<< Updated upstream
             
+=======
+            // marginTop:hp(8),
+>>>>>>> Stashed changes
             borderRadius: 10,
             alignItems:'center',
             justifyContent:'center'

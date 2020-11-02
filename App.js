@@ -15,6 +15,7 @@ import Signin from './src/screen/signin/sign_in'
 export default class App extends Component {
   render() {
     return (
+<<<<<<< Updated upstream
       
        <Signin/>
     
@@ -34,6 +35,13 @@ export default class App extends Component {
   //   </View>
       // <Page/>
     // <In/> 
+=======
+      //  <Signup/>
+      // <Page/>
+      // <In/> 
+      // <Download/>
+      <Favourite />
+>>>>>>> Stashed changes
     )
   }
 }

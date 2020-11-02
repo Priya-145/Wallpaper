@@ -1,8 +1,18 @@
+<<<<<<< Updated upstream
 import React, {Component } from 'react'
 import { Text, View, Image, TextInput, ScrollView, TouchableOpacity, KeyboardAvoidingView } from 'react-native'
 import ComponentText from '../component/customInput'
 import CustomButton from '../component/customButton'
 import {heightPercentageToDP as hp , widthPercentageToDP as wp} from 'react-native-responsive-screen'
+=======
+import React, { Component } from 'react'
+import { Text, View, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native'
+import ComponentText from '../component/customInput'
+import CustomButton from '../component/customButton'
+import { Icons } from '../../utils/icon'
+import {KeyboardAvoidingView} from 'react-native-keyboard-aware-scroll-view'
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
+>>>>>>> Stashed changes
 // import AnimatedInput from "react-native-animated-input";
 
 
