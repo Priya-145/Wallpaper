@@ -43,15 +43,15 @@ export default class sign_in extends Component {
                                 <ComponentText label='Password'  />
                                 <Image source={Icons.lock} style={{marginTop:hp(3)}}></Image>
                             </View>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={()=>this.props.navigation.navigate('ResetPassword')}>
                                 <Text style={styles.forgot}>Forgot Password?</Text>
                             </TouchableOpacity>
                             <View style={{marginTop:hp(7.38)}}>
-                                <CustomButton name="Sign IN" />
+                                <CustomButton name="Sign IN" onPress={()=>this.props.navigation.navigate('Latest')}/>
                             </View>
                             <View style={styles.bottom}>
                                 <Text style={styles.text3}>Don't have an account? </Text>
-                                <TouchableOpacity >
+                                <TouchableOpacity onPress={()=>this.props.navigation.navigate('Signup')}>
                                     <Text style={styles.text4}>
                                         Signup
                                 </Text>

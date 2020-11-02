@@ -74,7 +74,7 @@ export default class latestScreen extends Component {
                     </ScrollView>
                 </View>
                 <View>
-                <Customimage/>
+                <Customimage onPress={()=>this.props.navigation.navigate('Download')}/>
                 </View>
             
             </View>

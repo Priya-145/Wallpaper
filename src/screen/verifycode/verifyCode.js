@@ -37,7 +37,7 @@ export default class resetPassword extends Component {
                         </View>
                     </View>
                     <View>
-                        <CustomButton name="Continue"/>
+                        <CustomButton name="Continue" onPress={()=>this.props.navigation.navigate('Latest')}/>
                     </View>
                 </View>
                 

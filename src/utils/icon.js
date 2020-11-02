@@ -1,4 +1,3 @@
-import { requireNativeComponent } from 'react-native';
 
 export const Icons = {
     combined:require('../../asset/image/icons/Combined_Shape.png'),

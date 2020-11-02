@@ -88,7 +88,7 @@ export default class Customimage extends Component {
                     renderItem={({item})=>{
                         return(
                             <View style={{marginHorizontal:wp(2),marginVertical:hp(1)}}>
-                                <TouchableOpacity>
+                                <TouchableOpacity onPress={this.props.onPress}>
                                     <Image source={item.img}  style={{height:hp(36.95),width:wp(42.67),borderRadius:20,alignSelf:'center'}}></Image>
                                 </TouchableOpacity>
                             </View>

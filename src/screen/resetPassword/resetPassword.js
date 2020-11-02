@@ -23,10 +23,10 @@ export default class resetPassword extends Component {
                     <Text style={Styles.text}>We will send 4 digits code to your </Text>
                     <Text style={Styles.text2}>email for the verification. </Text>
                     <View style={{marginTop:hp(8.62),}}>
-                        <ComponentText label='Name' name="ios-mail-outline"/>
+                        <ComponentText label='E-mail' name="ios-mail-outline"/>
                     </View>
                     <View style={{marginTop:hp(13.67)}}>
-                        <CustomButton name="Continue"/>
+                        <CustomButton name="Continue" onPress={()=>this.props.navigation.navigate('VerifyCode')}/>
                     </View>
                 {/* </ScrollView> */}
 

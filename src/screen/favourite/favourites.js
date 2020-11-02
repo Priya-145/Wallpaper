@@ -26,7 +26,7 @@ export default class favourites extends Component {
                 
                 <Customimage/>
                 </View>
-               
+{/*                
                 <View style={styles.bottom}>
                 
                     <Image source={Icons.blueheart} style={styles.blueheart}></Image>
@@ -36,7 +36,7 @@ export default class favourites extends Component {
                     <TouchableOpacity>
                         <Image source={Icons.circle} style={styles.circle}/>
                     </TouchableOpacity>
-                </View>
+                </View> */}
             </View>
         )
     }

@@ -10,7 +10,9 @@ export default StyleSheet.create({
         width: wp(100)
 
     },
-   
+   mainview:{
+    backgroundColor:'#161616'
+   },
     bottom: {
         backgroundColor: '#000000',
         height: hp(8.62),

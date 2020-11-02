@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Route from './src/screen/route/route'
+import Route from './src/screen/route/route'
 import Signup from './src/screen/signup/sign_up'
 import { Text, View } from 'react-native'
 import Signin from './src/screen/signin/sign_in'
@@ -29,8 +29,8 @@ export default class App extends Component {
       // <Page/>
       // <In/> 
       // <Download/>
-       <Favourite />
-      // <Route/>
+      //  <Favourite />
+      <Route/>
     )
   }
 }
