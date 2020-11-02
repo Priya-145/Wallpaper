@@ -21,9 +21,12 @@ export default class favourites extends Component {
                     </View>
                     <View style={{borderWidth:1,borderColor:'#343434',marginTop:hp(1.85)}}></View>
                 </View>
+                
                 <View style={{backgroundColor:'#161616'}}>
+                
                 <Customimage/>
                 </View>
+               
                 <View style={styles.bottom}>
                 
                     <Image source={Icons.blueheart} style={styles.blueheart}></Image>
