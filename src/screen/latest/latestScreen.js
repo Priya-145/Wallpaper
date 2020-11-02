@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View , Image,FlatList,ScrollView} from 'react-native'
+import { Text, View , Image,FlatList,ScrollView,TouchableOpacity} from 'react-native'
 import {Images} from '../../utils/image'
 import {Icons} from '../../utils/icon'
 import {Fonts} from '../../utils/font';
@@ -7,6 +7,12 @@ import { widthPercentageToDP as wp,heightPercentageToDP as hp} from 'react-nativ
 import Styles from './latestScreenStyle'
 
 export default class latestScreen extends Component {
+    constructor(){
+       super()
+       this.state={
+            isTouch:false
+       }
+    }
 
     render() {
 
@@ -17,7 +23,6 @@ export default class latestScreen extends Component {
             'Lorem',
             'Lorem',
             'Ran',
- 
         ];
 
         return (
@@ -43,15 +48,26 @@ export default class latestScreen extends Component {
 
                 <View style={{borderWidth:1,borderColor:'#343434',marginTop:hp(1.85)}}></View>
 
-                <View style={{flexDirection:'row'}}>
+                <View >
                     <ScrollView horizontal={true}>
+                    <TouchableOpacity onPress={()=>this.setState({isTouch:!this.state.isTouch})} style={{flexDirection:'row'}}>
+                    <Text  style={this.state.isTouch?{fontFamily:Fonts.Bold}:{fontFamily:Fonts.ExtraLight}}>
                     {
-                        Name.map((item,index)=>index)
-                        <View >
-                                <Text style={{color:'white'}}>{item}</Text>
-                        </View>
-                    }
+                        Name.map((item,index)=>{
+                            return(
+                                <View >
+                                    
+                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(8),marginVertical:hp(3.08)}}>
+                                            {item}
+                                        </Text>
+                                   
+                                </View>
+                            )
+                        })
                         
+                    }
+                    </Text>
+                    </TouchableOpacity>  
                     </ScrollView>
                 </View>
 
