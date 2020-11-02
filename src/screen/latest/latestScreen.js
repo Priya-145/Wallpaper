@@ -50,10 +50,6 @@ export default class latestScreen extends Component {
                          <View >
                                 <Text style={{color:'white'}}> {item} </Text>
                         </View>
-                         
-                         
-                    
-                        
                     </ScrollView>
                 </View>
 

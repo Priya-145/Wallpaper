@@ -4,21 +4,21 @@ import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import Signin from './src/screen/signin/sign_in'
 
-// import TextComponet from './src/screen/resetPassword/resetPassword'
+import TextComponet from './src/screen/resetPassword/resetPassword'
 // import Page from './src/screen/resetPassword/resetPassword'
 // import Page from './src/screen/verifycode/verifyCode'
 // import In from './src/screen/component/customInput'
 // import Page from './src/screen/resetPassword/resetPassword'
-// import Page from './src/screen/latest/latestScreen'
+import Page from './src/screen/latest/latestScreen'
 
 
 export default class App extends Component {
   render() {
     return (
       
-       <Signin/>
+      //  <Signin/>
     
-      // <TextComponet/>
+      <TextComponet/>
 // import Page from './src/screen/resetPassword/resetPassword'
 // import Page from './src/screen/verifycode/verifyCode'
 // import In from './src/screen/component/customInput'
