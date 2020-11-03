@@ -10,9 +10,7 @@ import Signin from './src/screen/signin/sign_in'
 // import In from './src/screen/component/customInput'
 // import Page from './src/screen/resetPassword/resetPassword'
 import Profilepage from './src/screen/profile/profile'
-import Page from './src/screen/latest/latestScreen'
-import Download from './src/screen/download/download'
-import Favourite from './src/screen/favourite/favourites'
+// import Page from './src/screen/latest/latestScreen'
 import Editprofile from './src/screen/editprofile/edit'
 import In from './src/screen/component/customProfile'
 // import Page from './src/screen/resetPassword/resetPassword'
@@ -40,7 +38,7 @@ export default class App extends Component {
 
   //   </View>
     
-      <Page/>
+      // <Page/>
       // <In/> 
       // <Page/>
       // <Page/>
@@ -49,7 +47,7 @@ export default class App extends Component {
       //  <Favourite />
       // <Route/>
       // <Profilepage/>
-      // <Editprofile/>
+      <Editprofile/>
     )
   }
 }

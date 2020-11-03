@@ -38,7 +38,7 @@ export default class download extends Component {
 
                     <View style={{ flexDirection: 'row', marginTop: hp(80.92),marginBottom:hp(4.93) }}>
                         <TouchableOpacity onPress={()=>this.setState({isColour:!this.state.isColour})} >
-                            <Image source={Icons.favourite}  style={this.state.isColour ? {tintColor:'#00FFFF', marginRight: wp(4), marginLeft: wp(9.34)}:{tintColor:'white', marginRight: wp(4), marginLeft: wp(9.34)}} ></Image>
+                            <Image source={Icons.favourite}  style={this.state.isColour ? {tintColor:'red', marginRight: wp(4), marginLeft: wp(9.34)}:{tintColor:'white', marginRight: wp(4), marginLeft: wp(9.34)}} ></Image>
                         </TouchableOpacity>
                         
                             <Downloadbutton name='Download' Icons={this.props.download} style={{ marginTop: hp(88.92), marginBottom: hp(4.93) }}></Downloadbutton>
