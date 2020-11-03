@@ -6,7 +6,33 @@ import {Fonts} from '../../utils/font';
 import { widthPercentageToDP as wp,heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import Styles from './latestScreenStyle'
 import Customimage from '../component/customimage'
+var Name = [
+    {
+        name:'Latest',
+        isSelected:false
+    },
+    {
+        name:'Popular',
+        isSelected:false
+    },
+    {
+        name:'Toplist',
+        isSelected:false
+    },
+    {
+        name:'Lorem',
+        isSelected:false
+    },
+    {
+        name:'Lorem',
+        isSelected:false
+    },
+    {
+        name:'Ran',
+        isSelected:false
+    },
 
+];
 export default class latestScreen extends Component {
     constructor(){
        super()
@@ -15,62 +41,63 @@ export default class latestScreen extends Component {
        }
     }
 
+    isClick(index){
+        Name.forEach(element => {
+            element.isSelected=false
+        });
+        Name[index].isSelected=true
+        this.setState({})
+
+    }
+
     render() {
 
-        var Name = [
-            'Latest',
-            'Popular',
-            'Toplist',
-            'Lorem',
-            'Lorem',
-            'Ran',
-        ];
+     
 
         return (
             <View style={{backgroundColor:"#161616",height:'100%',width:"100%"}}>
                 <View style={Styles.head}>
      
                     
-                    <TouchableOpacity style={{alignSelf:'center'}}>
+                    <TouchableOpacity style={{alignSelf:'center'}} onPress={()=>this.props.navigation.openDrawer()}>
                             <Image source={Icons.combined} />
                         </TouchableOpacity>
                 
                     <View style={Styles.headMid}>
                         <View style={{flexDirection:'row',justifyContent:'space-between',marginHorizontal:wp(5.33)}}>
-                            <Text style={{color:'#868686',fontFamily:Fonts.Light,fontSize:hp(1.97)}}>
-                                Search
+                            <Text style={{color:'white',fontFamily:Fonts.Regular,fontSize:18}}>
+                                Wallpapers
                             </Text>
-                            <Image source={Icons.search} style={{alignSelf:"center"}}/>
+                            {/* <Image source={Icons.search} style={{alignSelf:"center"}}/> */}
                         </View>
                     </View>
 
-                    
-                    <Image source={Images.a} style={{width:wp(8),height:hp(3.69),borderRadius:60}}></Image>
-                    
+                    <TouchableOpacity>
+                    <Image source={Icons.search} style={{height:hp(2),width:wp(4),marginTop:hp(1)}}></Image>
+                    </TouchableOpacity>
                 </View>
 
                 <View style={{borderWidth:1,borderColor:'#343434',marginTop:hp(1.85)}}></View>
 
                 <View >
-                    <ScrollView horizontal={true}>
-                    <TouchableOpacity onPress={()=>this.setState({isTouch:!this.state.isTouch})} style={{flexDirection:'row'}}>
-                    <Text  style={this.state.isTouch?{fontFamily:Fonts.Bold}:{fontFamily:Fonts.ExtraLight}}>
+                    <ScrollView horizontal={true}>  
                     {
                         Name.map((item,index)=>{
                             return(
                                 <View >
-                                    
-                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(8),marginVertical:hp(3.08)}}>
-                                            {item}
+                                <TouchableOpacity onPress={()=>this.isClick(index)} style={{flexDirection:'row'}}>
+                   
+                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(6),marginVertical:hp(3.08),fontFamily:item.isSelected?Fonts.Bold:Fonts.Regular,fontWeight:item.isSelected?'bold':'100'}}>
+                                            {item.name}
                                         </Text>
-                                   
+                                    
+                                 </TouchableOpacity>
                                 </View>
                             )
                         })
                     
                     }
-                    </Text>
-                    </TouchableOpacity>  
+                   
                     </ScrollView>
                 </View>
                 <View>

@@ -16,6 +16,8 @@ export const Icons = {
     more:require('../../asset/image/icons/Icon_ionic_ios_more.png'),
     blueheart:require('../../asset/image/icons/Icon_ionic_ios_heart.png'),
     lighthome:require('../../asset/image/icons/home_2.png'),
+    edit:require('../../asset/image/icons/Icon_feather_edit.png'),
+    call:require('../../asset/image/icons/Icon_ionic_ios_call.png'),
     facebook:require('../../asset/image/icons/facebook.png'),
     search:require('../../asset/image/icons/search.png'),
     liked:require('../../asset/image/icons/Group_110.png'),

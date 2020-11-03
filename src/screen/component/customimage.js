@@ -78,7 +78,7 @@ export default class Customimage extends Component {
 
         ]
         return (
-            <View style={{marginVertical:hp(2.46)}}>
+            <View style={{marginVertical:hp(10.46)}}>
             <ScrollView>
             <View  >
                 <FlatList data={images}

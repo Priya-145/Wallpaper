@@ -16,11 +16,11 @@ export default StyleSheet.create({
         // marginRight:wp(5.33)
         marginHorizontal:wp(4)
     },
-    headMid:{
-        width:wp(62.67),
-        height:hp(3.69),
-        borderRadius:40,
-        backgroundColor:'#464646',
-        justifyContent:'center'
-    }
+    // headMid:{
+    //     width:wp(62.67),
+    //     height:hp(3.69),
+    //     borderRadius:40,
+    //     backgroundColor:'#464646',
+    //     justifyContent:'center'
+    // }
 })
