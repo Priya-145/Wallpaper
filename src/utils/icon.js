@@ -15,5 +15,13 @@ export const Icons = {
     download:require('../../asset/image/icons/Icon_feather_download.png'),
     more:require('../../asset/image/icons/Icon_ionic_ios_more.png'),
     blueheart:require('../../asset/image/icons/Icon_ionic_ios_heart.png'),
-    lighthome:require('../../asset/image/icons/home_2.png')
+    lighthome:require('../../asset/image/icons/home_2.png'),
+    facebook:require('../../asset/image/icons/facebook.png'),
+    search:require('../../asset/image/icons/search.png'),
+    // liked:require('../../asset/image/icons/Group_110.png'),
+    // about:require('../../asset/image/icons/Group_220.png'),
+    // privacy:require('../../asset/image/icons/Group_330.png'),
+    // rate:require('../../asset/image/icons/Group_440.png'),
+    // share:require('../../asset/image/icons/Group_550.png'),
+    // logout:require('../../asset/image/icons/Group_660.png'),
 }
