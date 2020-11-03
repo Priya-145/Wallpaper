@@ -78,7 +78,11 @@ export default class Customimage extends Component {
 
         ]
         return (
+<<<<<<< HEAD
             <View style={{marginVertical:hp(10.46)}}>
+=======
+            <View style={{marginVertical:hp(1.46)}}>
+>>>>>>> dhara_dev
             <ScrollView>
             <View  >
                 <FlatList data={images}
