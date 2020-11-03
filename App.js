@@ -9,11 +9,13 @@ import Signin from './src/screen/signin/sign_in'
 // import Page from './src/screen/verifycode/verifyCode'
 // import In from './src/screen/component/customInput'
 // import Page from './src/screen/resetPassword/resetPassword'
-// import In from './src/screen/component/customInput'
+import In from './src/screen/component/customProfile'
 // import Page from './src/screen/resetPassword/resetPassword'
+import Page from './src/screen/drawer/drawer'
+
 // import Page from './src/screen/latest/latestScreen'
-// import Download from './src/screen/download/download'
-// import Favourite from './src/screen/favourite/favourites'
+import Download from './src/screen/download/download'
+import Favourite from './src/screen/favourite/favourites'
 
 export default class App extends Component {
   render() {
@@ -27,7 +29,7 @@ export default class App extends Component {
   //   </View>
       // <Page/>
       // <Page/>
-      // <In/> 
+      // {/* <In/>  */}
       // <Download/>
       //  <Favourite />
       // <Route/>

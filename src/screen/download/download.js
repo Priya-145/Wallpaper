@@ -25,10 +25,10 @@ export default class download extends Component {
                 <ImageBackground source={Images.i} style={styles.background}>
                     {/* <ScrollView> */}
                     <View style={styles.top}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={()=>this.props.navigation.goBack()}>
                             <Image source={Icons.back} style={styles.arrow}></Image>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity >
                             <Image source={Icons.more} style={styles.more}></Image>
                         </TouchableOpacity>
                         {/* <View><Icon name="ellipsis-vertical-outline" style={{ height: hp(20), width: wp(20), flexDirection: 'row-reverse' }}></Icon></View> */}
