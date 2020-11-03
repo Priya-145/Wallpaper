@@ -31,7 +31,7 @@ export default class latestScreen extends Component {
                 <View style={Styles.head}>
      
                     
-                    <TouchableOpacity style={{alignSelf:'center'}}>
+                    <TouchableOpacity style={{alignSelf:'center'}} onPress={()=>this.props.navigation.openDrawer()}>
                             <Image source={Icons.combined} />
                         </TouchableOpacity>
                 
@@ -60,7 +60,7 @@ export default class latestScreen extends Component {
                             return(
                                 <View >
                                     
-                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(8),marginVertical:hp(3.08)}}>
+                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(6),marginVertical:hp(3.08)}}>
                                             {item}
                                         </Text>
                                    
