@@ -11,10 +11,11 @@ import In from './src/screen/component/customInput'
 // import Page from './src/screen/resetPassword/resetPassword'
 // import In from './src/screen/component/customInput'
 // import Page from './src/screen/resetPassword/resetPassword'
+import Profilepage from './src/screen/profile/profile'
 import Page from './src/screen/latest/latestScreen'
 import Download from './src/screen/download/download'
 import Favourite from './src/screen/favourite/favourites'
-
+import Editprofile from './src/screen/editprofile/edit'
 export default class App extends Component {
   render() {
     return (
@@ -25,12 +26,14 @@ export default class App extends Component {
       // <TextComponet/>
 
   //   </View>
-      // <Page/>
-      // <Page/>
+    
+      <Page/>
       // <In/> 
       // <Download/>
       //  <Favourite />
-      <Route/>
+      // <Route/>
+      // <Profilepage/>
+      // <Editprofile/>
     )
   }
 }

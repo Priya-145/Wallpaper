@@ -37,16 +37,16 @@ export default class latestScreen extends Component {
                 
                     <View style={Styles.headMid}>
                         <View style={{flexDirection:'row',justifyContent:'space-between',marginHorizontal:wp(5.33)}}>
-                            <Text style={{color:'#868686',fontFamily:Fonts.Light,fontSize:hp(1.97)}}>
-                                Search
+                            <Text style={{color:'white',fontFamily:Fonts.Regular,fontSize:18}}>
+                                Wallpapers
                             </Text>
-                            <Image source={Icons.search} style={{alignSelf:"center"}}/>
+                            {/* <Image source={Icons.search} style={{alignSelf:"center"}}/> */}
                         </View>
                     </View>
 
-                    
-                    <Image source={Images.a} style={{width:wp(8),height:hp(3.69),borderRadius:60}}></Image>
-                    
+                    <TouchableOpacity>
+                    <Image source={Icons.search} style={{height:hp(2),width:wp(4),marginTop:hp(1)}}></Image>
+                    </TouchableOpacity>
                 </View>
 
                 <View style={{borderWidth:1,borderColor:'#343434',marginTop:hp(1.85)}}></View>
@@ -60,7 +60,7 @@ export default class latestScreen extends Component {
                             return(
                                 <View >
                                     
-                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(8),marginVertical:hp(3.08)}}>
+                                        <Text style={{color:'white',fontSize:hp(1.97),marginHorizontal:wp(6),marginVertical:hp(3.08)}}>
                                             {item}
                                         </Text>
                                    
