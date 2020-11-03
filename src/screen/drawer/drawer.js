@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View,FlatList, Image,TouchableOpacity } from 'react-native'
+import { Text, View,FlatList, Image,TouchableOpacity,ScrollView } from 'react-native'
 import CustomProfile from './../component/customProfile'
 import { heightPercentageToDP as hp ,widthPercentageToDP as wp } from 'react-native-responsive-screen'
 import { Fonts } from '../../utils/font'
@@ -43,7 +43,9 @@ export default class drawer extends Component {
         ]
         return (
             <View style={{height:'100%',width:'100%',backgroundColor:"transparent"}}>
+            
                 <View style={{height:'100%',width:wp(70),backgroundColor:"#161616",borderTopRightRadius:40,borderBottomRightRadius:40}}>
+                <ScrollView>
                     <View style={{marginTop:hp(8.62),alignSelf:"center"}}>
                         <CustomProfile/>
                         <Text style={{color:'white',fontSize:hp(1.72),marginTop:hp(1.23),fontFamily:Fonts.Medium,alignSelf:'center'}}>Wallpaper App </Text>
@@ -65,10 +67,12 @@ export default class drawer extends Component {
                             }}
                         />
                     </View>
-                    <View style={{alignSelf:'center',justifyContent:'flex-end',marginTop:hp(8)}}>
+                    <View style={{alignSelf:'center',justifyContent:'flex-end',marginTop:hp(3)}}>
                         <Text style={{color:'#817876',fontSize:hp(1.47)}}>Version : 1.2.7</Text>
                     </View>
-                </View>                
+                    </ScrollView>  
+                </View>  
+                           
             </View>
         )
     }
