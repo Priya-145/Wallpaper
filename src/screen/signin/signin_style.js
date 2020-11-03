@@ -9,7 +9,7 @@ import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-nat
 export default StyleSheet.create(
     {
         flex1: {
-            height: hp(50),
+            height: hp(35.12),
             width: wp(100),
             backgroundColor: '#161616',
             marginTop:hp(14.77),
@@ -64,14 +64,15 @@ export default StyleSheet.create(
     text3:{
         alignSelf:'center',
         marginTop:hp(1.97),
-        marginLeft:wp(5.33)
+        marginLeft:wp(5.33),
+        fontFamily: Fonts.Medium,
     },
 
     text4:{
         color:'#ffffff',
         marginTop:hp(1.97),
         marginLeft:wp(5.33),
-        
+        fontFamily: Fonts.Medium,
         
     }
 
