@@ -31,7 +31,7 @@ export default class latestScreen extends Component {
                 <View style={Styles.head}>
      
                     
-                    <TouchableOpacity style={{alignSelf:'center'}}>
+                    <TouchableOpacity style={{alignSelf:'center'}} onPress={()=>this.props.navigation.openDrawer()}>
                             <Image source={Icons.combined} />
                         </TouchableOpacity>
                 

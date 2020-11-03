@@ -9,76 +9,80 @@ import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-nat
 export default StyleSheet.create(
     {
         flex1: {
-            height: hp(35.34),
+            height: hp(35.12),
             width: wp(100),
             backgroundColor: '#161616',
-            justifyContent: 'center',
+            marginTop:hp(14.77),
             alignItems: 'center'
         },
         flex2: {
-            height: hp(64.66),
+            height: hp(50),
             width: wp(100),
             backgroundColor: '#000000',
             borderTopRightRadius: 30,
             borderTopLeftRadius: 30
         },
         text1: {
-            fontSize: hp(2.96),
+            fontSize: hp(3.69),
             justifyContent: 'center',
             alignSelf: 'center',
             color: 'rgba(255,255,255,0.5)',
-            marginTop: hp(7.62),
+            marginTop: hp(6.15),
             fontFamily: Fonts.Medium,
         },
         text2: {
-            fontSize: hp(1.97),
+            fontSize: hp(2.46),
             color: 'rgba(255,255,255,0.5)',
             justifyContent: 'center',
             alignSelf: 'center',
-            marginTop: hp(1.60),
+            marginTop: hp(1.84),
             fontFamily: Fonts.Regular,
         },
-        textinput1: {
-            marginTop: hp(4.31),
+      
+       button1:{
+           color:'#707070',
+           marginTop:hp(8.73),
+           backgroundColor:'#FFFFFF',
+           height:hp(7.01),
+           width:wp(86.66),
            alignSelf:'center',
-           flexDirection:'row'
-        },
-        textinput2: {
-            marginTop: hp(4.31),
-           alignSelf:'center',
-           flexDirection:'row'
-        },
-        forgot: {
-            alignSelf: 'flex-end',
-            color: 'rgba(255,255,255,0.5)',
-            fontSize: 12,
-            fontFamily: Fonts.Regular,
-            marginTop: hp(1.23),
-            marginRight:wp(5)
-        },
+          borderRadius:10,
+        
+       },
        
+       button2:{
+        color:'#FFFFFF',
+        marginTop:hp(3.07),
+        backgroundColor:'#3E5C9B',
+        // marginBottom:hp(8.62),
+        height:hp(7.01),
+        width:wp(86.66),
+        alignSelf:'center',
+        borderRadius:10,
+    },
+    
+    text3:{
+        alignSelf:'center',
+        marginTop:hp(1.97),
+        marginLeft:wp(5.33),
+        fontFamily: Fonts.Medium,
+    },
 
-        text3: {
-            color: 'rgba(255,255,255,0.5)',
-            fontSize: 12,
-            fontFamily: Fonts.Regular
+    text4:{
+        color:'#ffffff',
+        marginTop:hp(1.97),
+        marginLeft:wp(5.33),
+        fontFamily: Fonts.Medium,
+        
+    }
 
-        },
-        text4: {
-            color: '#009FB8',
-            fontSize: 12,
-            // borderBottomColor: '#009FB8',
-            // borderBottomWidth: 1,
-            fontFamily: Fonts.Bold,
-            textDecorationLine:'underline'
-        },
-        bottom: {
-            justifyContent: 'space-between',
-            flexDirection: 'row',
-            alignSelf: 'center',
-            marginTop: hp(2.46),
-            marginBottom: hp(4.68)
-        }
+        // bottom: {
+        //     justifyContent: 'space-between',
+        //     flexDirection: 'row',
+        //     alignSelf: 'center',
+        //     marginTop: hp(2.46),
+        //     marginBottom: hp(4.68)
+        // }
 
     }
 )

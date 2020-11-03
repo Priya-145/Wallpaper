@@ -9,12 +9,28 @@ import VerifyCode from '../verifycode/verifyCode'
 import Latest from '../latest/latestScreen'
 import Download from '../download/download'
 import Favourite from '../favourite/favourites'
+import Drw from '../drawer/drawer'
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
+import {createDrawerNavigator} from '@react-navigation/drawer'
+import { heightPercentageToDP as hp ,widthPercentageToDP as wp } from 'react-native-responsive-screen'
+
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { Icons } from '../../utils/icon'
 import LinearGradient from 'react-native-linear-gradient'
+
+
+const drawer=createDrawerNavigator()
+const draw=()=>{
+    return(
+        <drawer.Navigator drawerContent={props => <Drw/>} drawerStyle={{borderTopEndRadius:60,borderBottomEndRadius:60,width:wp(70),height:'100%'}}>
+            <drawer.Screen name='about' component={Latest}/>
+        </drawer.Navigator>
+
+    )
+}
+
 const Stack=createStackNavigator()
 const Home = () =>{
     return(
@@ -24,7 +40,6 @@ const Home = () =>{
                 <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}}/>
                 <Stack.Screen name="ResetPassword" component={ResetPassword} options={{headerShown:false}}/>
                 <Stack.Screen name="VerifyCode" component={VerifyCode} options={{headerShown:false}}/>
-                {/* <Stack.Screen name="InPut" component={InPut}/> */}
                 <Stack.Screen name="Latest" component={App} options={{headerShown:false}}/>
                 <Stack.Screen name="Download" component={Download} options={{headerShown:false}}/>
                 <Stack.Screen name="Favourite" component={Favourite} options={{headerShown:false}}/>
@@ -37,12 +52,7 @@ const Home = () =>{
 const tab=createBottomTabNavigator()
 
 class App extends React.Component{
-    constructor(){
-        super()
-        this.state={
-            isImage:false
-        }
-    }
+    
     render() {
         return (
 
@@ -51,9 +61,9 @@ class App extends React.Component{
             
             <tab.Navigator   
              barStyle={{ backgroundColor: 'pink' }}
-            
+            initialRouteName={'Latest'}
             tabBarOptions={{style:{backgroundColor:'black',borderTopRightRadius:20,borderTopLeftRadius:20,borderTopColor:'#161616',},activeTintColor:'#00ffff',showLabel:false}} >
-            <tab.Screen name="Latest" component={Latest}
+             <tab.Screen name="Favourite" component={Favourite}
             options={{
                 
                 tabBarIcon:({color})=>(
@@ -62,7 +72,8 @@ class App extends React.Component{
                 )
                 
             }}></tab.Screen>
-            <tab.Screen name="Favourite" component={Favourite}
+            
+            <tab.Screen name="Latest" component={draw}
             options={{
                 
                 tabBarIcon:({color})=>(
@@ -71,6 +82,7 @@ class App extends React.Component{
                 )
                 
             }}></tab.Screen>
+           
             <tab.Screen name="btn" component={CustomButton}
             options={{
                 

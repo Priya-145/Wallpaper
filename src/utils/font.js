@@ -1,11 +1,16 @@
 export const Fonts = {
-    Bold: 'Poppins-Bold',
-    Light: 'Poppins-Light',
-    Medium:'Poppins-Medium',
-    SemiBold:'Poppins-SemiBold',
-    Regular:'Poppins-Regular',
-    Light:'Poppins-Light',
-    Thin:'Poppins-Regular',
-    ExtraLight:'Poppins-ExtraLight'
-
+    Bold: 'Rubik-Bold',
+    BoldItalic:'Rubik-BoldItalic',
+    ExtraBold:'Rubik-ExtraBold',
+    ExtraBoldItalic:'Rubik-ExtraBoldItalic',
+    Light: 'Rubik-Italic',
+    Medium:'Rubik-Medium',
+    MediumItalic:'Rubik-MediumItalic',
+    SemiBold:'Rubik-SemiBold',
+    Regular:'Rubik-Regular',
+    LightItalic:'Rubik-LightItalic',
+    Black:'Rubik-Black',
+    BlackItalic:'Rubik-BlackItalic',
+    Italic:'Rubik-Italic',
+    SemiBoldItalic:'Rubik-SemiBoldItalic'
 }
