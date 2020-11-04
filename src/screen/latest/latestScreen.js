@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View , Image,FlatList,ScrollView,TouchableOpacity} from 'react-native'
+import { Text, View , Image,FlatList,ScrollView,TouchableOpacity,BackHandler} from 'react-native'
 import {Images} from '../../utils/image'
 import {Icons} from '../../utils/icon'
 import {Fonts} from '../../utils/font';
@@ -49,7 +49,7 @@ export default class latestScreen extends Component {
         this.setState({})
 
     }
-
+   
     render() {
 
      
