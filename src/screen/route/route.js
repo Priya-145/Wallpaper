@@ -21,6 +21,7 @@ import { heightPercentageToDP as hp ,widthPercentageToDP as wp } from 'react-nat
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { Icons } from '../../utils/icon'
 import LinearGradient from 'react-native-linear-gradient'
+import { Images } from '../../utils/image'
 
 
 const drawer=createDrawerNavigator()
