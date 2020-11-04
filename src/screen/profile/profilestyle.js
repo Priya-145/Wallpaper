@@ -17,7 +17,7 @@ export default StyleSheet.create({
         color: 'white',
         fontSize:hp(2.40),
         alignItems: 'center',
-        fontFamily: Fonts.Medium,
+        fontFamily: Fonts.Regular,
 
     },
     textinput: {

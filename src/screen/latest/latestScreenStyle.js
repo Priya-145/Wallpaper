@@ -45,7 +45,7 @@ export default StyleSheet.create({
       backgroundColor:'#939393',
       borderRadius:60,
       paddingHorizontal:wp(4.27),
-      fontSize:15,
+      fontSize:12,
     },
     
 })
