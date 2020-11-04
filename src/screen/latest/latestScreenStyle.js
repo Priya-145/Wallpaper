@@ -10,7 +10,7 @@ export default StyleSheet.create({
         justifyContent:'space-between',
         // width:'100%',
         marginTop:hp(3),
-        height:hp(3.69),
+        // height:hp(3.69),
         flexDirection:"row",
         zIndex:1000,
         // marginLeft:wp(5.33),

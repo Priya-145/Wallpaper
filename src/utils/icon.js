@@ -26,5 +26,6 @@ export const Icons = {
     rate:require('../../asset/image/icons/Group_440.png'),
     share:require('../../asset/image/icons/Group_550.png'),
     logout:require('../../asset/image/icons/Group_660.png'),
-    camera:require('../../asset/image/icons/camera.png')
+    camera:require('../../asset/image/icons/camera.png'),
+    blueuser:require('../../asset/image/icons/user_1.png')
 }

@@ -25,6 +25,8 @@ export default StyleSheet.create({
         color: 'white',
         fontSize:hp(2.40),
         alignItems: 'center',
+        justifyContent:'center',
+        alignSelf:'center',
         fontFamily: Fonts.Medium,
         
 
