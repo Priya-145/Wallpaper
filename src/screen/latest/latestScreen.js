@@ -154,6 +154,7 @@ export default class latestScreen extends Component {
                             value={this.state.keyword}
                             onChangeText={(value) => this.setState({ keyword: value })}
                             style={Styles._input}
+                            numberOfLines={1}
                         ></TextInput>
                     </Animated.View>
 
@@ -168,7 +169,7 @@ export default class latestScreen extends Component {
                             Name.map((item, index) => {
                                 return (
                                     <View >
-                                        <TouchableOpacity onPress={() => this.isClick(index)} style={{ flexDirection: 'row', backgroundColor:'red' }}>
+                                        <TouchableOpacity onPress={() => this.isClick(index)} style={{ flexDirection: 'row'}}>
 
                                             <Text style={{ color: 'white', fontSize: hp(1.97), marginHorizontal: 15,marginVertical:hp(1.5), fontFamily: item.isSelected ? Fonts.Bold : Fonts.Light }}>
                                                 {item.name}
@@ -183,7 +184,7 @@ export default class latestScreen extends Component {
 
                     </ScrollView>
                 </View>
-                <View style={{ marginTop: hp(2), height: hp(73.90) }}>
+                <View style={{ marginTop: hp(2), height: hp(81.90) }}>
                     <Customimage onPress={() => this.props.navigation.navigate('Download')} />
                 </View>
 

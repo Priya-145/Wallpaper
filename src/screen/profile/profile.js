@@ -8,6 +8,7 @@ import CustomProfile from './../component/customProfile'
 
 // import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
+import { Fonts } from '../../utils/font'
 
 export default class profile extends Component {
     render() {
@@ -34,7 +35,7 @@ export default class profile extends Component {
                             <Image source={Icons.user}></Image>
                         </View>
                         <View>
-                            <Text style={{color:'#939393',marginTop:hp(1.5)}}>
+                            <Text style={{color:'#939393',marginTop:hp(2),fontFamily:Fonts.Medium}}>
                                 John Doe
                             </Text>
                         </View>
@@ -44,7 +45,7 @@ export default class profile extends Component {
                             <Image source={Icons.mail}></Image>
                         </View>
                         <View>
-                            <Text  style={{color:'#939393',marginTop:hp(1.5)}}>
+                            <Text  style={{color:'#939393',marginTop:hp(2),fontFamily:Fonts.Medium}}>
                                 johndoe@gmail.com
                             </Text>
                         </View>
@@ -54,7 +55,7 @@ export default class profile extends Component {
                             <Image source={Icons.call}></Image>
                         </View>
                         <View>
-                            <Text style={{color:'#939393',marginTop:hp(1.5)}}>
+                            <Text style={{color:'#939393',marginTop:hp(2),fontFamily:Fonts.Medium}}>
                                 1234567890
                             </Text>
                         </View>
