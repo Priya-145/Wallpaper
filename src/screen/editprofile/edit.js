@@ -4,8 +4,8 @@ import styles from './editstyle'
 import { Icons } from '../../utils/icon'
 import ComponentText from '../component/customInput'
 import CustomButton from '../component/customButton'
-import { Images } from '../../utils/image'
-import Customimage from '../component/customimage'
+// import { Images } from '../../utils/image'
+// import Customimage from '../component/customimage'
 import CustomProfile from './../component/customProfile'
 
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
@@ -29,11 +29,11 @@ export default class profile extends Component {
                         <View> 
 
                             <CustomProfile/>
-                           {/* <View> */}
+                        
                                 <TouchableOpacity  style={{position:'absolute',right:0,bottom:0}}>                       
                                     <Image source={Icons.camera} />
                                 </TouchableOpacity>
-                            {/* </View> */}
+                          
                         </View>
                     </View>
                     <View style={styles.textinput}>
@@ -51,6 +51,7 @@ export default class profile extends Component {
                     <View style={{marginTop:hp(8)}}>
                                 <CustomButton name='Save'/>
                             </View>
+                            
                 </View>
             </View>
 
