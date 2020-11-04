@@ -6,6 +6,8 @@ import Signup from '../signup/sign_up'
 import ResetPassword from '../resetPassword/resetPassword'
 import Signin from '../signin/sign_in'
 import VerifyCode from '../verifycode/verifyCode'
+import Profile from '../profile/profile'
+import Edit from '../editprofile/edit'
 import Latest from '../latest/latestScreen'
 import Download from '../download/download'
 import Favourite from '../favourite/favourites'
@@ -22,29 +24,28 @@ import LinearGradient from 'react-native-linear-gradient'
 
 
 const drawer=createDrawerNavigator()
-const draw=()=>{
-    return(
-        <drawer.Navigator drawerContent={props => <Drw/>} drawerStyle={{borderTopEndRadius:60,borderBottomEndRadius:60,width:wp(70),height:'100%'}}>
-            <drawer.Screen name='about' component={Latest}/>
-        </drawer.Navigator>
+// const draw=()=>{
+//     return(
+           
 
-    )
-}
+//     )
+// }
 
 const Stack=createStackNavigator()
 const Home = () =>{
     return(
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="SignIn" component={Signin} options={{headerShown:false}}/>
-                <Stack.Screen name="Signup" component={Signup} options={{headerShown:false}}/>
-                <Stack.Screen name="ResetPassword" component={ResetPassword} options={{headerShown:false}}/>
-                <Stack.Screen name="VerifyCode" component={VerifyCode} options={{headerShown:false}}/>
-                <Stack.Screen name="Latest" component={App} options={{headerShown:false}}/>
-                <Stack.Screen name="Download" component={Download} options={{headerShown:false}}/>
-                <Stack.Screen name="Favourite" component={Favourite} options={{headerShown:false}}/>
+        <drawer.Navigator drawerContent={props => <Drw/>} drawerStyle={{borderTopEndRadius:60,borderBottomEndRadius:60,width:wp(70),height:'100%'}}>
+                <drawer.Screen name="SignIn" component={Signin} options={{gestureEnabled:false}}/>
+                {/* <drawer.Screen name="Signup" component={Signup} options={{headerShown:false}}/> */}
+                <drawer.Screen name="ResetPassword" component={ResetPassword}/>
+                <drawer.Screen name="VerifyCode" component={VerifyCode}/>
+                <drawer.Screen name="Latest" component={App} />
+                <drawer.Screen name="Download" component={Download} />
+                <drawer.Screen name="Favourite" component={Favourite} />
+                <drawer.Screen name="Edit" component={Edit} />
 
-            </Stack.Navigator>
+            </drawer.Navigator>
         </NavigationContainer>
     )
 }
@@ -73,7 +74,7 @@ class App extends React.Component{
                 
             }}></tab.Screen>
             
-            <tab.Screen name="Latest" component={draw}
+            <tab.Screen name="Latest" component={Latest}
             options={{
                 
                 tabBarIcon:({color})=>(
@@ -83,7 +84,7 @@ class App extends React.Component{
                 
             }}></tab.Screen>
            
-            <tab.Screen name="btn" component={CustomButton}
+            <tab.Screen name="Profile" component={Profile}
             options={{
                 
                 tabBarIcon:({color})=>(
@@ -92,6 +93,15 @@ class App extends React.Component{
                 )
                 
             }}></tab.Screen>
+            {/* <tab.Screen name="Edit" component={Edit}
+            options={{
+                tabBarVisible:false,
+                tabBarIcon:({color})=>(
+                    <Ionicons name='md-person' size={30} color={color}/>
+                    
+                )
+                
+            }}></tab.Screen> */}
           
           
         </tab.Navigator>
