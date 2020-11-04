@@ -87,7 +87,7 @@ constructor()
             options={{
                 
                 tabBarIcon:({focused,color})=>(
-<Image source={focused? Icons.home : Icons.lighthome}></Image>                    
+                    <Image source={focused? Icons.home : Icons.lighthome}></Image>                    
                 )
                 
             }}></tab.Screen>
@@ -96,7 +96,7 @@ constructor()
             options={{
                 
                 tabBarIcon:({focused,color})=>(
-<Image source={focused? Icons.blueuser : Icons.circle}></Image>                    
+                    <Image source={focused? Icons.blueuser : Icons.circle}></Image>                    
                 )
                 
             }}></tab.Screen>
