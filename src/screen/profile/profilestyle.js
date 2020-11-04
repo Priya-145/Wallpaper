@@ -14,7 +14,7 @@ export default StyleSheet.create({
     },
     text: {
         color: 'white',
-        fontSize: 16,
+        fontSize:hp(2.40),
         alignItems: 'center',
         fontFamily: Fonts.Medium,
 
@@ -29,7 +29,7 @@ export default StyleSheet.create({
         alignSelf: 'center',
         marginTop: hp(3.07),
         flexDirection: 'row',
-        
+
      
     }
 })

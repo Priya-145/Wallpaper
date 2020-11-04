@@ -23,7 +23,7 @@ export default StyleSheet.create({
     },
     text: {
         color: 'white',
-        fontSize: 16,
+        fontSize:hp(2.40),
         alignItems: 'center',
         fontFamily: Fonts.Medium,
         

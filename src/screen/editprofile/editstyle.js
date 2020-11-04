@@ -13,7 +13,7 @@ export default StyleSheet.create({
         backgroundColor: '#161616'
     },
     profileview: {
-        marginTop: hp(6.40),
+        marginTop: hp(3),
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -22,7 +22,7 @@ export default StyleSheet.create({
     },
     text: {
         color: 'white',
-        fontSize: 16,
+        fontSize:hp(2.40),
         alignSelf: 'center',
         textAlign: 'center',
         fontFamily: Fonts.Medium,
