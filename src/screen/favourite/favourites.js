@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, ScrollView, Text, View, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, ScrollView, Text, View, Image, TouchableOpacity ,StatusBar} from 'react-native'
 import styles from './f_style'
 import { Icons } from '../../utils/icon'
 import { Images } from '../../utils/image'
@@ -11,8 +11,9 @@ export default class favourites extends Component {
     render() {
         return (
             <View style={styles.main}>
+            <StatusBar backgroundColor='#161616'></StatusBar>
                 <View style={styles.mainview}>
-                    <View style={{ marginTop: hp(6.40), flexDirection: 'row',justifyContent:'space-between' ,alignItems:'center',marginHorizontal:wp(4),width: wp(54.93)}}>
+                    <View style={{ marginTop: hp(3), flexDirection: 'row',justifyContent:'space-between' ,alignItems:'center',marginHorizontal:wp(4),width: wp(54.93)}}>
                         <TouchableOpacity onPress={()=>this.props.navigation.openDrawer()}> 
                             <Image source={Icons.combined} />
                         </TouchableOpacity>
