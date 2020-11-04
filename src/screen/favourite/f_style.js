@@ -26,6 +26,7 @@ export default StyleSheet.create({
         fontSize: 16,
         alignItems: 'center',
         fontFamily: Fonts.Medium,
+        
 
     },
     blueheart: {
