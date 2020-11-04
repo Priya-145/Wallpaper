@@ -164,7 +164,7 @@ export default class latestScreen extends Component {
                     </View>
 
                     <TouchableOpacity onPress={this._onFocus}>
-                        <Image source={Icons.search} style={{ height: hp(2), width: wp(4), marginTop: hp(1) }}></Image>
+                        <Image source={Icons.search} style={{ height: hp(2.3), width: wp(4), marginTop: hp(1) }}></Image>
                     </TouchableOpacity>
                     <Animated.View style={[Styles.input, { transform: [{ translateX: this.box }] }]}>
                         <Animated.View style={{ opacity: this.back }}>
