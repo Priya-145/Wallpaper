@@ -10,7 +10,8 @@ export default StyleSheet.create({
         width: '100%'
     },
     mainview: {
-        backgroundColor: '#161616'
+        backgroundColor: '#161616',
+        marginTop: hp(3),
     },
     text: {
         color: 'white',

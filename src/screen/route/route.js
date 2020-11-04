@@ -21,6 +21,7 @@ import { heightPercentageToDP as hp ,widthPercentageToDP as wp } from 'react-nat
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { Icons } from '../../utils/icon'
 import LinearGradient from 'react-native-linear-gradient'
+import { Images } from '../../utils/image'
 
 
 const drawer=createDrawerNavigator()
@@ -33,6 +34,7 @@ const drawer=createDrawerNavigator()
 
 const Stack=createStackNavigator()
 const Home = () =>{
+    
     return(
         <NavigationContainer>
         <drawer.Navigator drawerContent={props => <Drw/>} drawerStyle={{borderTopEndRadius:60,borderBottomEndRadius:60,width:wp(70),height:'100%'}}>
@@ -53,7 +55,13 @@ const Home = () =>{
 const tab=createBottomTabNavigator()
 
 class App extends React.Component{
-    
+constructor()
+    {
+        super()
+        this.state={
+            isButton:false
+        }
+    }
     render() {
         return (
 
@@ -67,8 +75,9 @@ class App extends React.Component{
              <tab.Screen name="Favourite" component={Favourite}
             options={{
                 
-                tabBarIcon:({color})=>(
-                    <Ionicons name='md-heart' size={30} color={color}/>
+                tabBarIcon:({focused,color})=>(
+                    // <Ionicons name='md-heart' size={30} color={color}/>
+                    <Image source={focused? Icons.blueheart : Icons.heart}></Image>
                     
                 )
                 
@@ -77,9 +86,8 @@ class App extends React.Component{
             <tab.Screen name="Latest" component={Latest}
             options={{
                 
-                tabBarIcon:({color})=>(
-                    <Ionicons name='md-home' size={30} color={color}/>
-                    
+                tabBarIcon:({focused,color})=>(
+                    <Image source={focused? Icons.home : Icons.lighthome}></Image>                    
                 )
                 
             }}></tab.Screen>
@@ -87,9 +95,8 @@ class App extends React.Component{
             <tab.Screen name="Profile" component={Profile}
             options={{
                 
-                tabBarIcon:({color})=>(
-                    <Ionicons name='md-person' size={30} color={color}/>
-                    
+                tabBarIcon:({focused,color})=>(
+                    <Image source={focused? Icons.blueuser : Icons.circle}></Image>                    
                 )
                 
             }}></tab.Screen>
