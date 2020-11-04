@@ -14,8 +14,8 @@ export default class profile extends Component {
         return (
             <View style={styles.main}>
                 <View style={styles.mainview}>
-                    <View style={{ marginTop: hp(6.40), flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginHorizontal: wp(4) }}>
-                        <TouchableOpacity onPress={() => this.props.navigation.openDrawer()}>
+                    <View style={{ marginTop: hp(3), flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginHorizontal: wp(4) }}>
+                        <TouchableOpacity onPress={()=>this.props.navigation.openDrawer()}>
                             <Image source={Icons.combined} />
                         </TouchableOpacity>
                         <Text style={styles.text}>Profile</Text>
