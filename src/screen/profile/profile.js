@@ -33,8 +33,8 @@ export default class profile extends Component {
                         <View style={{ justifyContent: 'center', alignItems: 'center', width: wp(14.67) }}>
                             <Image source={Icons.user}></Image>
                         </View>
-                        <View>
-                            <Text style={{color:'#939393',marginTop:hp(1.5)}}>
+                        <View style={{justifyContent:'center'}}>
+                            <Text style={{color:'#939393'}}>
                                 John Doe
                             </Text>
                         </View>
@@ -43,8 +43,8 @@ export default class profile extends Component {
                         <View style={{ justifyContent: 'center', alignItems: 'center', width: wp(14.67) }}>
                             <Image source={Icons.mail}></Image>
                         </View>
-                        <View>
-                            <Text  style={{color:'#939393',marginTop:hp(1.5)}}>
+                        <View style={{justifyContent:'center'}}>
+                            <Text  style={{color:'#939393'}}>
                                 johndoe@gmail.com
                             </Text>
                         </View>
@@ -53,8 +53,8 @@ export default class profile extends Component {
                         <View style={{ justifyContent: 'center', alignItems: 'center', width: wp(14.67) }}>
                             <Image source={Icons.call}></Image>
                         </View>
-                        <View>
-                            <Text style={{color:'#939393',marginTop:hp(1.5)}}>
+                        <View style={{justifyContent:'center'}}>
+                            <Text style={{color:'#939393'}}>
                                 1234567890
                             </Text>
                         </View>
