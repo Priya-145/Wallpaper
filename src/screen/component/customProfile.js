@@ -11,13 +11,14 @@ export default class CustomProfile extends Component {
      
         <View>
           <Image
-            source={require('../../../asset/image/wallpapers/s.jpg')}
+            // source={require('../../../asset/image/wallpapers/s.jpg')}
+            source={this.props.source}
             style={{
-              width: wp(26.67),
+              width: hp(14.32),
               height: hp(14.32),
               borderWidth: 4,
               borderColor: 'white',
-              borderRadius: 100,
+              borderRadius: hp(14.32/2),
             }}
           />
         </View>

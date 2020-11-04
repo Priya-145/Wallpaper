@@ -4,6 +4,7 @@ import styles from './editstyle'
 import { Icons } from '../../utils/icon'
 import ComponentText from '../component/customInput'
 import CustomButton from '../component/customButton'
+import ImagePicker from 'react-native-image-picker';
 // import { Images } from '../../utils/image'
 // import Customimage from '../component/customimage'
 import CustomProfile from './../component/customProfile'
@@ -11,6 +12,43 @@ import CustomProfile from './../component/customProfile'
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class profile extends Component {
+
+    constructor(){
+        super()
+        this.state={
+            avatarSource:''
+        }
+    }
+
+    onClick=()=>{
+        const options = {
+            title: 'Select Avatar',
+            storageOptions: {
+              skipBackup: true,
+              path: 'images',
+            },
+          };
+           
+        
+          ImagePicker.showImagePicker(options, (response) => {
+            console.log('Response = ', response);
+           
+            if (response.didCancel) {
+              console.log('User cancelled image picker');
+            } else if (response.error) {
+              console.log('ImagePicker Error: ', response.error);
+            } else if (response.customButton) {
+              console.log('User tapped custom button: ', response.customButton);
+            } else {
+              const source = { uri: response.uri };
+     
+              this.setState({
+                avatarSource: source,
+              });
+            }
+          });
+    }
+
     render() {
         return (
             <View style={styles.main}>
@@ -28,9 +66,9 @@ export default class profile extends Component {
                     <View style={{height:hp(23.70),justifyContent:'center',alignItems:'center',marginTop:hp(2)}}>
                         <View> 
 
-                            <CustomProfile/>
+                            <CustomProfile source={this.state.avatarSource} />
                         
-                                <TouchableOpacity  style={{position:'absolute',right:0,bottom:0}}>                       
+                                <TouchableOpacity  style={{position:'absolute',right:0,bottom:0}} onPress={()=>this.onClick()}>                       
                                     <Image source={Icons.camera} />
                                 </TouchableOpacity>
                           

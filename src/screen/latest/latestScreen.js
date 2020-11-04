@@ -85,25 +85,10 @@ export default class latestScreen extends Component {
                 toValue:1,
                 easing: Easing.inOut(Easing.ease)
             }
-            // const box_config_y = {
-            //     duration:0,
-            //     toValue:0,
-            //     easing: Easing.inOut(Easing.ease)
-            // }
-            // const y_opacity = {
-            //     duration:201,
-            //     toValue:1,
-            //     easing: Easing.inOut(Easing.ease)
-            // }
+
             timing(this.box,box_config_x).start()
             timing(this.back, button_opacity).start()
-            // timing(this.content, box_config_y).start()
-            // timing(this.opacity, y_opacity).start()
-
-
-            // this.refs.input.focus()
-
-
+         
     }
 
     onBlur = () => {
@@ -119,22 +104,10 @@ export default class latestScreen extends Component {
             toValue:0,
             easing: Easing.inOut(Easing.ease)
         }
-        // const box_config_y = {
-        //     duration:0,
-        //     toValue:height,
-        //     easing: Easing.inOut(Easing.ease)
-        // }
-        // const y_opacity = {
-        //     duration:201,
-        //     toValue:0,
-        //     easing: Easing.inOut(Easing.ease)
-        // }
+
         timing(this.box,box_config_x).start()
         timing(this.back, button_opacity).start()
-        // timing(this.content, box_config_y).start()
-        // timing(this.opacity, y_opacity).start()
 
-        // this.refs.input.blur()
     }
 
 
@@ -164,7 +137,7 @@ export default class latestScreen extends Component {
                     </View>
 
                     <TouchableOpacity onPress={this._onFocus}>
-                        <Image source={Icons.search} style={{ height: hp(2), width: wp(4), marginTop: hp(1) }}></Image>
+                        <Image source={Icons.search} style={{ height: hp(2.3), width: wp(4), marginTop: hp(1) }}></Image>
                     </TouchableOpacity>
                     <Animated.View style={[Styles.input, { transform: [{ translateX: this.box }] }]}>
                         <Animated.View style={{ opacity: this.back }}>
@@ -190,14 +163,14 @@ export default class latestScreen extends Component {
                 <View style={{ borderWidth: 1, borderColor: '#343434', marginTop: hp(1.85) }}></View>
 
                 <View >
-                    <ScrollView horizontal={true}>
+                    <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                         {
                             Name.map((item, index) => {
                                 return (
                                     <View >
-                                        <TouchableOpacity onPress={() => this.isClick(index)} style={{ flexDirection: 'row' }}>
+                                        <TouchableOpacity onPress={() => this.isClick(index)} style={{ flexDirection: 'row', backgroundColor:'red' }}>
 
-                                            <Text style={{ color: 'white', fontSize: hp(1.97), marginHorizontal: wp(6), marginVertical: hp(3.08), fontFamily: item.isSelected ? Fonts.Bold : Fonts.Light }}>
+                                            <Text style={{ color: 'white', fontSize: hp(1.97), marginHorizontal: 15,marginVertical:hp(1.5), fontFamily: item.isSelected ? Fonts.Bold : Fonts.Light }}>
                                                 {item.name}
                                             </Text>
 

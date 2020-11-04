@@ -21,6 +21,7 @@ import { heightPercentageToDP as hp ,widthPercentageToDP as wp } from 'react-nat
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { Icons } from '../../utils/icon'
 import LinearGradient from 'react-native-linear-gradient'
+import { Images } from '../../utils/image'
 
 
 const drawer=createDrawerNavigator()
@@ -67,8 +68,9 @@ class App extends React.Component{
              <tab.Screen name="Favourite" component={Favourite}
             options={{
                 
-                tabBarIcon:({color})=>(
-                    <Ionicons name='md-heart' size={30} color={color}/>
+                tabBarIcon:({focused, color})=>(
+                    // <Ionicons name='md-heart' size={30} color={color}/>
+                    <Image source={focused? Icons.home : Icons.heart} style={{tintColor:{color}}} />
                     
                 )
                 

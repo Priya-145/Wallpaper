@@ -13,7 +13,7 @@ export default class favourites extends Component {
             <View style={styles.main}>
             <StatusBar backgroundColor='#161616'></StatusBar>
                 <View style={styles.mainview}>
-                    <View style={{ marginTop: hp(3), flexDirection: 'row',justifyContent:'space-between' ,alignItems:'center',marginHorizontal:wp(4),width: wp(54.93)}}>
+                    <View style={{ marginTop: hp(3), flexDirection: 'row',justifyContent:'space-between' ,alignItems:'center',marginHorizontal:wp(4),width: wp(56.93)}}>
                         <TouchableOpacity onPress={()=>this.props.navigation.openDrawer()}> 
                             <Image source={Icons.combined} />
                         </TouchableOpacity>

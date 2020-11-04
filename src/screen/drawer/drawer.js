@@ -67,7 +67,7 @@ export default class drawer extends Component {
                             }}
                         />
                     </View>
-                    <View style={{alignSelf:'center',justifyContent:'flex-end',bottom:hp(1),height:hp(12)}}>
+                    <View style={{alignSelf:'center',justifyContent:'flex-end',bottom:0,height:hp(12)}}>
                         <Text style={{color:'#817876',fontSize:hp(1.47),fontFamily:Fonts.Regular}}>Version : 1.2.7</Text>
                     </View>
                     {/* </ScrollView>   */}
