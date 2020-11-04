@@ -30,6 +30,7 @@ export default class profile extends Component {
         let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (!this.state.userEmail) {
             alert("Please fill Email");
+            
             return ;
           }
         else if (reg.test(text) === false) {
@@ -51,7 +52,6 @@ export default class profile extends Component {
             return;
           }
          if (!emails) {
-
             return;
           }
          if (!userPhone) {

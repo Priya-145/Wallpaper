@@ -154,6 +154,7 @@ export default class latestScreen extends Component {
                             value={this.state.keyword}
                             onChangeText={(value) => this.setState({ keyword: value })}
                             style={Styles._input}
+                            numberOfLines={1}
                         ></TextInput>
                     </Animated.View>
 
