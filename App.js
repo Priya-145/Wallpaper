@@ -45,9 +45,9 @@ export default class App extends Component {
       // {/* <In/>  */}
       // <Download/>
       //  <Favourite />
-      // <Route/>
+      <Route/>
       // <Profilepage/>
-      <Editprofile/>
+      // <Editprofile/>
     )
   }
 }
