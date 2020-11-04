@@ -34,7 +34,7 @@ export default class sign_in extends Component {
                         <View>
                             <TouchableOpacity style={styles.button1} onPress={()=>this.props.navigation.navigate('Latest')}>
                                 <View style={{ flexDirection: 'row' }}>
-                                     <Image source={Icons.search} style={{marginTop:hp(1.97),marginLeft:wp(10.66)}}></Image>
+                                     <Image source={Icons.google} style={{marginTop:hp(1.97),marginLeft:wp(10.66)}}></Image>
                                      <Text style={styles.text3}>Sign in with Google</Text>
                                 </View>
                             </TouchableOpacity>

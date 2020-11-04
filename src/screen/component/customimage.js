@@ -78,9 +78,9 @@ export default class Customimage extends Component {
 
         ]
         return (
-            <View style={{marginVertical:hp(10.46)}}>
+            <View style={{marginBottom:hp(3.46)}}>
             <ScrollView>
-            <View  >
+            <View  style={{marginBottom:hp(6.46)}}>
                 <FlatList data={images}
                     style={{alignSelf:'center'}}
                     keyExtractor={(item,index)=>index}
