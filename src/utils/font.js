@@ -3,7 +3,7 @@ export const Fonts = {
     BoldItalic:'Rubik-BoldItalic',
     ExtraBold:'Rubik-ExtraBold',
     ExtraBoldItalic:'Rubik-ExtraBoldItalic',
-    Light: 'Rubik-Italic',
+    Light: 'Rubik-Light',
     Medium:'Rubik-Medium',
     MediumItalic:'Rubik-MediumItalic',
     SemiBold:'Rubik-SemiBold',

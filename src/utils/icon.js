@@ -19,11 +19,12 @@ export const Icons = {
     edit:require('../../asset/image/icons/Icon_feather_edit.png'),
     call:require('../../asset/image/icons/Icon_ionic_ios_call.png'),
     facebook:require('../../asset/image/icons/facebook.png'),
-    search:require('../../asset/image/icons/search.png'),
+    google:require('../../asset/image/icons/search.png'),
     liked:require('../../asset/image/icons/Group_110.png'),
     about:require('../../asset/image/icons/Group_220.png'),
     privacy:require('../../asset/image/icons/Group_330.png'),
     rate:require('../../asset/image/icons/Group_440.png'),
     share:require('../../asset/image/icons/Group_550.png'),
     logout:require('../../asset/image/icons/Group_660.png'),
+    camera:require('../../asset/image/icons/camera.png')
 }
