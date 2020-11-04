@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {Fonts} from '../../utils/font';
+import { StyleSheet } from 'react-native';
+import { Fonts } from '../../utils/font';
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
