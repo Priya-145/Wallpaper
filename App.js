@@ -17,7 +17,6 @@ import Route from './src/screen/route/route'
 // import In from './src/screen/component/customProfile'
 // import Page from './src/screen/resetPassword/resetPassword'
 // import Page from './src/screen/drawer/drawer'
-
 // import Page from './src/screen/latest/latestScreen'
 // import Download from './src/screen/download/download'
 // import Favourite from './src/screen/favourite/favourites'
