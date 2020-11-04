@@ -18,24 +18,19 @@ export default class ComponentText extends Component {
                 <Sae
                     label={this.props.label}
                     labelStyle={{color:"#707070",marginBottom:hp(3),fontFamily:Fonts.Regular}}
-                    inputStyle={{fontSize:hp(1.97),fontFamily:Fonts.Bold,fontSize:hp(1.97)}}
+                    inputStyle={{fontSize:hp(3.97),fontSize:hp(1.97)}}
                     inputPadding={10}
                     labelHeight={10}
                     borderHeight={0}
                     style={{fontFamily:Fonts.SemiBold}}
                     autoCapitalize={'none'}
                     autoCorrect={false}
+                    keyboardType={this.props.keyboardType}
+                    maxLength={this.props.maxLength}
+                    onChangeText={this.props.onChangeText}
                
                  />
-                 {/* <AnimatedInput
-                    placeholder="Email"
-                    // valid={isValid}
-                    errorText="Error"
-                    // onChangeText={handleChange}
-                    value={this.props.value}
-                    styleLabel={{ fontWeight: "600" }}
-                    styleBodyContent={{ borderBottomWidth: 1.5 }}
-                /> */}
+                 
 
 
 

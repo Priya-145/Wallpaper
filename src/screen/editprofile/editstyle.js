@@ -25,7 +25,7 @@ export default StyleSheet.create({
         fontSize:hp(2.40),
         alignSelf: 'center',
         textAlign: 'center',
-        fontFamily: Fonts.Medium,
+        fontFamily: Fonts.Regular,
 
     },
     textinput:{
