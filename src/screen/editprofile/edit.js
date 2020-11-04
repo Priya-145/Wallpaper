@@ -55,7 +55,7 @@ export default class profile extends Component {
                 <View style={styles.mainview}>
                     <View style={styles.profileview}>
                         <TouchableOpacity onPress={()=>this.props.navigation.openDrawer()}>
-                            <Image source={Icons.combined} />
+                            <Image source={Icons.combined}style={{marginLeft:wp(5.33)}} />
                         </TouchableOpacity>
                         <Text style={styles.text}>Profile</Text>
 

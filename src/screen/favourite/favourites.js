@@ -13,9 +13,9 @@ export default class favourites extends Component {
             <View style={styles.main}>
             <StatusBar backgroundColor='#161616'></StatusBar>
                 <View style={styles.mainview}>
-                    <View style={{ marginTop: hp(3), flexDirection: 'row',justifyContent:'space-between' ,alignItems:'center',marginHorizontal:wp(4),width: wp(56.93)}}>
+                    <View style={{ marginTop: hp(3), flexDirection: 'row',justifyContent:'space-between' ,alignItems:'center',width: wp(60)}}>
                         <TouchableOpacity onPress={()=>this.props.navigation.openDrawer()}> 
-                            <Image source={Icons.combined} />
+                            <Image source={Icons.combined} style={{marginLeft:wp(5.33)}}/>
                         </TouchableOpacity>
                         <Text style={styles.text}>Favourite</Text>
                        {/* <Image source={Images.a} style={{width:wp(8),height:hp(3.69),borderRadius:60}}></Image> */}
