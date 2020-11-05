@@ -9,6 +9,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 // import { Images } from '../../utils/image'
 // import Customimage from '../component/customimage'
 import CustomProfile from './../component/customProfile'
+import Profilephoto from './../profilephoto/profilephoto'
 
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
@@ -25,39 +26,52 @@ export default class profile extends Component {
         }
     }
 
-    validate = (text) => {
-        console.log(text);
+    validate = (text,text1,text2) => {
+        // console.log(text);
         let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (!this.state.userEmail) {
-            alert("Please fill Email");
+        let reg1 = /^[a-zA-Z]+$/;
+        let reg2 = /^[0]?[789]\d{9}$/;
+
+
+        if (!this.state.userEmail || !this.state.userName || !this.state.userPhone ) {
+            alert("Please fill all fields");
             
             return ;
           }
-        else if (reg.test(text) === false) {
+        else if (reg.test(text) === false ) {
           alert("Email is Not Correct");
           return false;
         }
+        else if (reg1.test(text1) === false ) {
+          alert("name is Not Correct");
+          return false;
+        }
+        else if (reg2.test(text2) === false ) {
+          alert("number is Not Correct");
+          return false;
+        }
         else {
-          console.log("Email is Correct");
+          alert("done");
           return true;
         }
+       
+        
       }
+      
+     
     
     onCheck=()=>{
         const {userName,userEmail,userPhone}=this.state
-        const emails=this.validate(userEmail)
+        const emails=this.validate(userEmail,userName,userPhone)
+        
+
+
         var self=this
-        if (!userName) {
-            alert('Please fill name');
+        if (!emails) {
+            // alert('Please fill name');
             return;
           }
-         if (!emails) {
-            return;
-          }
-         if (!userPhone) {
-            alert('Please fill Contact Number');
-            return;
-          }
+         
        
     }
 
@@ -111,6 +125,9 @@ export default class profile extends Component {
 
                             <CustomProfile source={this.state.avatarSource} />
                         
+                        {/* {Profilephoto.Profilephoto=this.state.avatarSource} */}
+
+
                                 <TouchableOpacity  style={{position:'absolute',right:0,bottom:0}} onPress={()=>this.onClick()}>                       
                                     <Image source={Icons.camera} />
                                 </TouchableOpacity>

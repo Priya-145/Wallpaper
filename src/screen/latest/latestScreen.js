@@ -85,10 +85,12 @@ export default class latestScreen extends Component {
                 toValue:1,
                 easing: Easing.inOut(Easing.ease)
             }
-
+           
             timing(this.box,box_config_x).start()
             timing(this.back, button_opacity).start()
-         
+           
+
+
     }
 
     onBlur = () => {
@@ -104,16 +106,12 @@ export default class latestScreen extends Component {
             toValue:0,
             easing: Easing.inOut(Easing.ease)
         }
-
+        
         timing(this.box,box_config_x).start()
         timing(this.back, button_opacity).start()
-
+       
     }
-
-
     render() {
-
-
 
         return (
             <View style={{ backgroundColor: "#161616", height: '100%', width: "100%" }}>
@@ -137,7 +135,7 @@ export default class latestScreen extends Component {
                     </View>
 
                     <TouchableOpacity onPress={this._onFocus}>
-                        <Image source={Icons.search} style={{ height: hp(2.3), width: wp(4), marginTop: hp(1) }}></Image>
+                        <Image source={Icons.search} style={{ height: hp(2.3   ), width: wp(4), marginTop: hp(1) }}></Image>
                     </TouchableOpacity>
                     <Animated.View style={[Styles.input, { transform: [{ translateX: this.box }] }]}>
                         <Animated.View style={{ opacity: this.back }}>
@@ -154,7 +152,6 @@ export default class latestScreen extends Component {
                             value={this.state.keyword}
                             onChangeText={(value) => this.setState({ keyword: value })}
                             style={Styles._input}
-                            numberOfLines={1}
                         ></TextInput>
                     </Animated.View>
 
@@ -164,14 +161,14 @@ export default class latestScreen extends Component {
                 <View style={{ borderWidth: 1, borderColor: '#343434', marginTop: hp(1.85) }}></View>
 
                 <View >
-                    <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+                    <ScrollView horizontal={true}>
                         {
                             Name.map((item, index) => {
                                 return (
                                     <View >
-                                        <TouchableOpacity onPress={() => this.isClick(index)} style={{ flexDirection: 'row'}}>
+                                        <TouchableOpacity onPress={() => this.isClick(index)} style={{ flexDirection: 'row' }}>
 
-                                            <Text style={{ color: 'white', fontSize: hp(1.97), marginHorizontal: 15,marginVertical:hp(1.5), fontFamily: item.isSelected ? Fonts.Bold : Fonts.Light }}>
+                                            <Text style={{ color: 'white', fontSize: hp(1.97), marginHorizontal: wp(6), marginVertical: hp(3.08), fontFamily: item.isSelected ? Fonts.Bold : Fonts.Light }}>
                                                 {item.name}
                                             </Text>
 
@@ -184,7 +181,7 @@ export default class latestScreen extends Component {
 
                     </ScrollView>
                 </View>
-                <View style={{ marginTop: hp(2), height: hp(81.90) }}>
+                <View style={{ marginTop: hp(2), height: hp(73.90) }}>
                     <Customimage onPress={() => this.props.navigation.navigate('Download')} />
                 </View>
 

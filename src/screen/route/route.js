@@ -12,6 +12,7 @@ import Latest from '../latest/latestScreen'
 import Download from '../download/download'
 import Favourite from '../favourite/favourites'
 import Drw from '../drawer/drawer'
+import Splash from '../splashscreen/splashscreen'
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
 import {createDrawerNavigator} from '@react-navigation/drawer'
@@ -25,21 +26,14 @@ import { Images } from '../../utils/image'
 
 
 const drawer=createDrawerNavigator()
-// const draw=()=>{
-//     return(
-           
-
-//     )
-// }
-
 const Stack=createStackNavigator()
 const Home = () =>{
     
     return(
         <NavigationContainer>
         <drawer.Navigator drawerContent={props => <Drw/>} drawerStyle={{borderTopEndRadius:60,borderBottomEndRadius:60,width:wp(70),height:'100%'}}>
+                <drawer.Screen name="Splash" component={Splash} options={{gestureEnabled:false}}/>
                 <drawer.Screen name="SignIn" component={Signin} options={{gestureEnabled:false}}/>
-                {/* <drawer.Screen name="Signup" component={Signup} options={{headerShown:false}}/> */}
                 <drawer.Screen name="ResetPassword" component={ResetPassword}/>
                 <drawer.Screen name="VerifyCode" component={VerifyCode}/>
                 <drawer.Screen name="Latest" component={App} />
@@ -76,7 +70,6 @@ constructor()
             options={{
                 
                 tabBarIcon:({focused,color})=>(
-                    // <Ionicons name='md-heart' size={30} color={color}/>
                     <Image source={focused? Icons.blueheart : Icons.heart}></Image>
                     
                 )
@@ -100,17 +93,7 @@ constructor()
                 )
                 
             }}></tab.Screen>
-            {/* <tab.Screen name="Edit" component={Edit}
-            options={{
-                tabBarVisible:false,
-                tabBarIcon:({color})=>(
-                    <Ionicons name='md-person' size={30} color={color}/>
-                    
-                )
-                
-            }}></tab.Screen> */}
-          
-          
+         
         </tab.Navigator>
         
         </View>

@@ -6,6 +6,7 @@ import { Fonts } from '../../utils/font'
 import { Images } from '../../utils/image'
 import { Icons } from '../../utils/icon'
 import { Ionicons } from 'react-native-vector-icons/Ionicons'
+import { profilephoto } from '../profilephoto/profilephoto'
 
 
 
@@ -47,7 +48,10 @@ export default class drawer extends Component {
                 <View style={{height:'100%',width:wp(70),backgroundColor:"#161616",borderTopRightRadius:40,borderBottomRightRadius:40}}>
                 {/* <ScrollView> */}
                     <View style={{marginTop:hp(8.62),alignSelf:"center"}}>
-                        <CustomProfile/>
+
+                        {/* {this.state.profilephoto=profilephoto.profilephoto} */}
+                        <CustomProfile />
+
                         <Text style={{color:'white',fontSize:hp(1.72),marginTop:hp(1.23),fontFamily:Fonts.Medium,alignSelf:'center'}}>Wallpaper App </Text>
                     </View>
                     <View style={{borderWidth:0.5,width:wp(61.13),borderColor:'rgba(224,244,244,0.2)',marginTop:hp(4.93),marginLeft:wp(4)}}></View>
